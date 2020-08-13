@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<script type="text/javascript">
+		function 登录(){
+			var 用户名信息=document.getElementById("用户名").value
+			var 密码信息=document.getElementById("密码").value
+			if (用户名信息=="梁国沛"){
+				alert("用户名验证成功！");
+				alert("点击确认进入密码验证！");
+				if (密码信息=="QQ100923"){
+					alert("密码验证成功！");
+					alert("按下确认进入");
+					location.href='xiaoliang/index.html';
+				}
+				else{
+					alert("密码验证失败！");
+					alert("请检查密码是否错误！");
+				}
+			}
+			else{
+				alert("用户名验证失败！");
+				alert("请检查用户名是否错误！");
+			}
+		}
+	</script>
+	<style type="text/css">
+		div.loop{
+			width: 235px;
+			height: 230px;
+			background-color: seagreen;
+			margin: 130px auto;
+		}
+	</style>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+	</head>
+	<div class="loop">
+		
+		<h3>登录</h3>
+		&emsp;用户名：<input type="text" size="15" id="用户名"><br><br>
+		&emsp;密码：<input type="password"size="17" id="密码"><br><br>
+		<font style="margin-left: 50px;"></font><input  type="button" onclick="登录()" value="登录" ><br>
+		
+	</div>
+</html>
